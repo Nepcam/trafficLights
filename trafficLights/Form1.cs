@@ -25,26 +25,43 @@ namespace trafficLights
 
         private void buttonDrawTrafficLights_Click(object sender, EventArgs e)
         {
-            //Make draw surface
-            Graphics canvas = pictureBoxArea.CreateGraphics();
+            try
+            {
+                //GET user input
+                double radius = 0;
+                radius = double.Parse(textBoxUserInput.Text);
+                Console.WriteLine(radius);
 
-            //Fill shape with color
-            SolidBrush brush1 = new SolidBrush(Color.Red);
+                //Make draw surface
+                Graphics canvas = pictureBoxArea.CreateGraphics();
 
-            //Setting up the rectangle with coordinates
-            Rectangle bar = new Rectangle(10, 10, 100, 100);
+                //Fill shape with color
+                SolidBrush brush1 = new SolidBrush(Color.Red);
 
-            //Fill rectangle with a circle and fill with color
-            canvas.FillEllipse(brush1, bar);
+                //Setting up the rectangle with coordinates
+                Rectangle bar = new Rectangle(10, 10, 100, 100);
 
-            bar.Y += 110;
-            brush1.Color = Color.Orange;
-            canvas.FillEllipse(brush1, bar);
+                //Fill rectangle with a circle and fill with color
+                canvas.FillEllipse(brush1, bar);
 
-            bar.Y += 120;
-            brush1.Color = Color.Green;
-            canvas.FillEllipse(brush1, bar);
+                //GET input value for the size of the circle ?????
+                radius = bar.Width;
+                radius = bar.Height;
+                Console.WriteLine(radius);
 
+                bar.Y += 110;
+                brush1.Color = Color.Orange;
+                canvas.FillEllipse(brush1, bar);
+
+                bar.Y += 120;
+                brush1.Color = Color.Green;
+                canvas.FillEllipse(brush1, bar);
+            }
+            catch
+            {
+                MessageBox.Show("Please enter a number");
+                textBoxUserInput.Focus();
+            }
         }
 
         private void buttonExit_Click(object sender, EventArgs e)

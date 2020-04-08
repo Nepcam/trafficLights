@@ -33,29 +33,30 @@
             this.buttonDrawTrafficLights = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArea)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxArea
             // 
-            this.pictureBoxArea.Location = new System.Drawing.Point(215, 1);
+            this.pictureBoxArea.Location = new System.Drawing.Point(468, 1);
             this.pictureBoxArea.Name = "pictureBoxArea";
-            this.pictureBoxArea.Size = new System.Drawing.Size(585, 505);
+            this.pictureBoxArea.Size = new System.Drawing.Size(332, 505);
             this.pictureBoxArea.TabIndex = 0;
             this.pictureBoxArea.TabStop = false;
             // 
             // textBoxUserInput
             // 
-            this.textBoxUserInput.Location = new System.Drawing.Point(42, 23);
+            this.textBoxUserInput.Location = new System.Drawing.Point(218, 137);
             this.textBoxUserInput.Name = "textBoxUserInput";
             this.textBoxUserInput.Size = new System.Drawing.Size(100, 20);
             this.textBoxUserInput.TabIndex = 1;
             // 
             // buttonDrawTrafficLights
             // 
-            this.buttonDrawTrafficLights.Location = new System.Drawing.Point(42, 112);
+            this.buttonDrawTrafficLights.Location = new System.Drawing.Point(118, 171);
             this.buttonDrawTrafficLights.Name = "buttonDrawTrafficLights";
-            this.buttonDrawTrafficLights.Size = new System.Drawing.Size(142, 23);
+            this.buttonDrawTrafficLights.Size = new System.Drawing.Size(200, 23);
             this.buttonDrawTrafficLights.TabIndex = 2;
             this.buttonDrawTrafficLights.Text = "Draw Traffic Lights";
             this.buttonDrawTrafficLights.UseVisualStyleBackColor = true;
@@ -63,7 +64,7 @@
             // 
             // buttonClear
             // 
-            this.buttonClear.Location = new System.Drawing.Point(42, 198);
+            this.buttonClear.Location = new System.Drawing.Point(118, 220);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(75, 23);
             this.buttonClear.TabIndex = 3;
@@ -73,7 +74,7 @@
             // 
             // buttonExit
             // 
-            this.buttonExit.Location = new System.Drawing.Point(42, 301);
+            this.buttonExit.Location = new System.Drawing.Point(243, 220);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(75, 23);
             this.buttonExit.TabIndex = 4;
@@ -81,11 +82,22 @@
             this.buttonExit.UseVisualStyleBackColor = true;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(119, 140);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 15);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Set the radius";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 507);
+            this.ClientSize = new System.Drawing.Size(800, 436);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.buttonDrawTrafficLights);
@@ -106,6 +118,7 @@
         private System.Windows.Forms.Button buttonDrawTrafficLights;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.Label label1;
     }
 }
 
