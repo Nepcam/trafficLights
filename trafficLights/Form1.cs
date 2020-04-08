@@ -25,14 +25,25 @@ namespace trafficLights
 
         private void buttonDrawTrafficLights_Click(object sender, EventArgs e)
         {
+            //Make draw surface
             Graphics canvas = pictureBoxArea.CreateGraphics();
-            Pen pen1 = new Pen(Color.Black);
 
-            //Draw traffic light
-            canvas.DrawEllipse(pen1, 10, 10, 50, 50);
+            //Fill shape with color
+            SolidBrush brush1 = new SolidBrush(Color.Red);
 
+            //Setting up the rectangle with coordinates
+            Rectangle bar = new Rectangle(10, 10, 100, 100);
 
+            //Fill rectangle with a circle and fill with color
+            canvas.FillEllipse(brush1, bar);
 
+            bar.Y += 110;
+            brush1.Color = Color.Orange;
+            canvas.FillEllipse(brush1, bar);
+
+            bar.Y += 120;
+            brush1.Color = Color.Green;
+            canvas.FillEllipse(brush1, bar);
 
         }
 

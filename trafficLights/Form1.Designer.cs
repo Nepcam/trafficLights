@@ -38,9 +38,9 @@
             // 
             // pictureBoxArea
             // 
-            this.pictureBoxArea.Location = new System.Drawing.Point(265, 2);
+            this.pictureBoxArea.Location = new System.Drawing.Point(215, 1);
             this.pictureBoxArea.Name = "pictureBoxArea";
-            this.pictureBoxArea.Size = new System.Drawing.Size(535, 448);
+            this.pictureBoxArea.Size = new System.Drawing.Size(585, 505);
             this.pictureBoxArea.TabIndex = 0;
             this.pictureBoxArea.TabStop = false;
             // 
@@ -85,7 +85,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 507);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.buttonDrawTrafficLights);
