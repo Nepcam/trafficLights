@@ -28,8 +28,8 @@ namespace trafficLights
             try
             {
                 //GET user input
-                double radius = 0;
-                radius = double.Parse(textBoxUserInput.Text);
+                int radius = 0;
+                radius = int.Parse(textBoxUserInput.Text);
                 Console.WriteLine(radius);
 
                 //Make draw surface
