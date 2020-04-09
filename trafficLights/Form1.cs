@@ -44,9 +44,12 @@ namespace trafficLights
                 //Fill rectangle with a circle and fill with color
                 canvas.FillEllipse(brush1, bar);
 
-                //GET input value for the size of the circle ?????
+                //GET input value and set it as the size property 
+                bar.Width = radius;
+                bar.Height = radius;
+
                 radius = bar.Width;
-                radius = bar.Height;
+                radius = bar.Height; 
                 Console.WriteLine(radius);
 
                 bar.Y += 110;
