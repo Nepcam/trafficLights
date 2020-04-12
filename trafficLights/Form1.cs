@@ -35,6 +35,9 @@ namespace trafficLights
                 //Make draw surface
                 Graphics canvas = pictureBoxArea.CreateGraphics();
 
+                //Pen for the border
+                Pen blackPen = new Pen(Color.Black, 5);
+
                 //Fill shape with color
                 SolidBrush brush1 = new SolidBrush(Color.Red);
 
@@ -43,6 +46,9 @@ namespace trafficLights
 
                 //Fill rectangle with a circle and fill with color
                 canvas.FillEllipse(brush1, bar);
+
+                //Draw the border of the shape
+                canvas.DrawEllipse(blackPen, bar);
 
                 //GET input value and set it as the size property 
                 bar.Width = radius;
@@ -55,10 +61,12 @@ namespace trafficLights
                 bar.Y += 110;
                 brush1.Color = Color.Orange;
                 canvas.FillEllipse(brush1, bar);
+                canvas.DrawEllipse(blackPen, bar);
 
                 bar.Y += 120;
                 brush1.Color = Color.Green;
                 canvas.FillEllipse(brush1, bar);
+                canvas.DrawEllipse(blackPen, bar);
             }
             catch
             {
