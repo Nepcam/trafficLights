@@ -12,7 +12,8 @@ namespace trafficLights
 {
     public partial class Form1 : Form
     {
-        const double GAP_DISTANCE = 0; // vertical distance between lights
+        const int GAP_DISTANCE = 20; // vertical distance between lights
+
         public Form1()
         {
             InitializeComponent();
@@ -25,6 +26,7 @@ namespace trafficLights
 
         private void buttonDrawTrafficLights_Click(object sender, EventArgs e)
         {
+            
             try
             {
                 //GET user input
@@ -42,21 +44,20 @@ namespace trafficLights
                 SolidBrush brush1 = new SolidBrush(Color.Red);
 
                 //Setting up the rectangle with coordinates
-                Rectangle bar = new Rectangle(10, 10, 100, 100);
-
-                //Fill rectangle with a circle and fill with color
-                canvas.FillEllipse(brush1, bar);
-
-                //Draw the border of the shape
-                canvas.DrawEllipse(blackPen, bar);
+                Rectangle bar = new Rectangle(10, 10, 100, 100);          
 
                 //GET input value and set it as the size property 
                 bar.Width = radius;
                 bar.Height = radius;
 
-                radius = bar.Width;
-                radius = bar.Height; 
+                radius = bar.Width/2;
+                radius = bar.Height/2; 
                 Console.WriteLine(radius);
+
+                bar.Y += 10;
+                brush1.Color = Color.Red;
+                canvas.FillEllipse(brush1, bar);
+                canvas.DrawEllipse(blackPen, bar);
 
                 bar.Y += 110;
                 brush1.Color = Color.Orange;

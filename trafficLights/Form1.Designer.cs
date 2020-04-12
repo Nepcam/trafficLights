@@ -47,16 +47,16 @@
             // 
             // textBoxUserInput
             // 
-            this.textBoxUserInput.Location = new System.Drawing.Point(218, 137);
+            this.textBoxUserInput.Location = new System.Drawing.Point(243, 137);
             this.textBoxUserInput.Name = "textBoxUserInput";
             this.textBoxUserInput.Size = new System.Drawing.Size(100, 20);
             this.textBoxUserInput.TabIndex = 1;
             // 
             // buttonDrawTrafficLights
             // 
-            this.buttonDrawTrafficLights.Location = new System.Drawing.Point(118, 171);
+            this.buttonDrawTrafficLights.Location = new System.Drawing.Point(15, 191);
             this.buttonDrawTrafficLights.Name = "buttonDrawTrafficLights";
-            this.buttonDrawTrafficLights.Size = new System.Drawing.Size(200, 23);
+            this.buttonDrawTrafficLights.Size = new System.Drawing.Size(328, 23);
             this.buttonDrawTrafficLights.TabIndex = 2;
             this.buttonDrawTrafficLights.Text = "Draw Traffic Lights";
             this.buttonDrawTrafficLights.UseVisualStyleBackColor = true;
@@ -64,9 +64,9 @@
             // 
             // buttonClear
             // 
-            this.buttonClear.Location = new System.Drawing.Point(118, 220);
+            this.buttonClear.Location = new System.Drawing.Point(15, 239);
             this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new System.Drawing.Size(75, 23);
+            this.buttonClear.Size = new System.Drawing.Size(150, 23);
             this.buttonClear.TabIndex = 3;
             this.buttonClear.Text = "Clear";
             this.buttonClear.UseVisualStyleBackColor = true;
@@ -74,9 +74,9 @@
             // 
             // buttonExit
             // 
-            this.buttonExit.Location = new System.Drawing.Point(243, 220);
+            this.buttonExit.Location = new System.Drawing.Point(195, 239);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(75, 23);
+            this.buttonExit.Size = new System.Drawing.Size(148, 23);
             this.buttonExit.TabIndex = 4;
             this.buttonExit.Text = "Exit";
             this.buttonExit.UseVisualStyleBackColor = true;
@@ -86,11 +86,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(119, 140);
+            this.label1.Location = new System.Drawing.Point(12, 142);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 15);
+            this.label1.Size = new System.Drawing.Size(215, 15);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Set the radius";
+            this.label1.Text = "Enter a Number to set the radius";
             // 
             // Form1
             // 
