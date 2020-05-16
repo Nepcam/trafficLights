@@ -78,6 +78,8 @@ namespace trafficLights
         {
             //Clear the textBox
             textBoxUserInput.Text = "";
+            //Clear the picture box
+            pictureBoxArea.Refresh();
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
