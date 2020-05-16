@@ -76,8 +76,9 @@ namespace trafficLights
 
         private void buttonClear_Click(object sender, EventArgs e)
         {
-            //Clear the textBox
+            //Clear the textBox and set focus
             textBoxUserInput.Text = "";
+            textBoxUserInput.Focus();
             //Clear the picture box
             pictureBoxArea.Refresh();
         }
