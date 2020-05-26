@@ -11,11 +11,13 @@ namespace trafficLights
         {
             InitializeComponent();
         }
-       
+
+        //Set variables
+        const int GAP_DISTANCE = 20; //(Y) Vertical distance variable
+
         private void buttonDrawTrafficLights_Click(object sender, EventArgs e)
         {
-            //Set variables
-            const int GAP_DISTANCE = 20; //(Y) Vertical distance variable
+            
 
             // GET user input                            
             int radius = 0;
@@ -40,31 +42,31 @@ namespace trafficLights
 
             try
             {              
-                if (radius < 101)
+                //if (radius < 101)
                 {
                     // I wasn't too sure on how to get the radius
                     radius = bar.Width / 2;
                     radius = bar.Height / 2;
                     Console.WriteLine(radius); //Check value
             
-                    bar.Y += 10 + GAP_DISTANCE;
+                    bar.Y += GAP_DISTANCE;
                     brush1.Color = Color.Red;
                     canvas.FillEllipse(brush1, bar);
                     canvas.DrawEllipse(blackPen, bar);
 
-                    bar.Y += 100 + GAP_DISTANCE;
+                    bar.Y += bar.Height + GAP_DISTANCE;
                     brush1.Color = Color.Orange;
                     canvas.FillEllipse(brush1, bar);
                     canvas.DrawEllipse(blackPen, bar);
 
-                    bar.Y += 100 + GAP_DISTANCE;
+                    bar.Y += bar.Height + GAP_DISTANCE;
                     brush1.Color = Color.Green;
                     canvas.FillEllipse(brush1, bar);
                     canvas.DrawEllipse(blackPen, bar);
                 }
-                else
+                //else
                 {
-                    MessageBox.Show("Number is too big!!");
+                    //MessageBox.Show("Number is too big!!");
                 }
             }
             catch
